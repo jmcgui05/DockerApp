@@ -21,7 +21,7 @@ jobs:
           name: install dependencies
           command: |
             python3 -m venv dockerapp
-            . venv/bin/activate
+            . dockerapp/bin/activate
             make install
             # install hadolint
             wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.17.5/hadolint-Linux-x86_64 && chmod +x /bin/hadolint
